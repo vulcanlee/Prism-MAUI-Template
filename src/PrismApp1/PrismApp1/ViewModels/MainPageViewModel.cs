@@ -3,7 +3,7 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace PrismApp1.ViewModels;
 
-public partial class MainPageViewModel : ObservableObject
+public partial class MainPageViewModel : ObservableObject, INavigatedAware
 {
     private int _count;
 
@@ -27,5 +27,13 @@ public partial class MainPageViewModel : ObservableObject
             Text = "Clicked 1 time";
         else if (_count > 1)
             Text = $"Clicked {_count} times";
+    }
+
+    public void OnNavigatedFrom(INavigationParameters parameters)
+    {
+    }
+
+    public void OnNavigatedTo(INavigationParameters parameters)
+    {
     }
 }
