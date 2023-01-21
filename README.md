@@ -4,7 +4,7 @@
 
 d:\nuget.exe pack D:\Vulcan\GitHub\Prism-MAUI-Template\Vulcan.Maui.Template.nuspec -outputdirectory d:\temp
 
-dotnet new install d:\temp\Vulcan.Maui.Template.0.1.0.nupkg
+dotnet new install d:\temp\Vulcan.Maui.Template.0.1.2.nupkg
 
 dotnet new Vulcan-Maui -o d:\Temp\MyApp
 

@@ -1,26 +1,26 @@
-﻿namespace PrismApp1.ViewModels;
+﻿using CommunityToolkit.Mvvm.ComponentModel;
+using CommunityToolkit.Mvvm.Input;
 
-public class MainPageViewModel : BindableBase
+namespace PrismApp1.ViewModels;
+
+public partial class MainPageViewModel : ObservableObject
 {
     private int _count;
 
     public MainPageViewModel()
     {
-        CountCommand = new DelegateCommand(OnCountCommandExecuted);
     }
 
-    public string Title => "Main Page";
+    [ObservableProperty]
+    string title = "Main Page";
 
-    private string _text = "Click me";
-    public string Text
-    {
-        get => _text;
-        set => SetProperty(ref _text, value);
-    }
+    [ObservableProperty]
+    string text = "Click me";
 
-    public DelegateCommand CountCommand { get; }
 
-    private void OnCountCommandExecuted()
+
+    [RelayCommand]
+    private void Count()
     {
         _count++;
         if (_count == 1)

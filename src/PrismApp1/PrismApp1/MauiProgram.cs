@@ -24,7 +24,7 @@ public static class MauiProgram
                      {
                          // Navigate to First page of this App
                          var result = await navigationService
-                         .NavigateAsync("MainPage");
+                         .NavigateAsync("NavigationPage/MainPage");
                          if (!result.Success)
                          {
                              System.Diagnostics.Debugger.Break();
