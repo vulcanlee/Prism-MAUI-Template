@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Vulcan",
+  "classifications": [ "Common", "Code", "MAUI" ],
+  "identity": "Vulcan.PrismLibrary.Maui.MVVM",
+  "name": "Vulcan Custom Prism .NET MAUI View and View Model",
+  "shortName": "MVVMItem",
+  "sourceName": "PrismApp1", 
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  }
+}
