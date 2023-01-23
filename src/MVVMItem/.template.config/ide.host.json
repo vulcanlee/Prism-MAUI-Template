@@ -1,4 +1,25 @@
 {
   "$schema": "http://json.schemastore.org/vs-2017.3.host",
-  "icon": "ide/icon.ico"
+  "icon": "ide/icon.ico",
+  "symbolInfo": [
+    {
+      "id": "namespace",
+      "name": {
+        "text": "base namespace to use for the generated view"
+      },
+      "isVisible": true
+    },
+    {
+      "id": "view-name",
+      "name": {
+        "text": "view class name"
+      },
+      "isVisible": true
+    }
+  ],
+  "unsupportedHosts": [
+    { 
+      "id": "vs"
+    } 
+  ]
 }

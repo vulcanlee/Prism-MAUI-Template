@@ -12,13 +12,15 @@ public static class MauiProgram
         builder
             .UseMauiApp<App>()
             .UsePrism(prism =>
+            {
+
                 prism.RegisterTypes(container =>
                       {
                           container.RegisterForNavigation<MainPage, MainPageViewModel>();
                       })
                      .OnInitialized(() =>
                       {
-                         // Do some initializations here
+                          // Do some initializations here
                       })
                      .OnAppStart(async navigationService =>
                      {
@@ -29,8 +31,8 @@ public static class MauiProgram
                          {
                              System.Diagnostics.Debugger.Break();
                          }
-                     })
-            )
+                     });
+            })
             .ConfigureFonts(fonts =>
             {
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
