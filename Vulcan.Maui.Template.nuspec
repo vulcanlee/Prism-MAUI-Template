@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Vulcan.Maui.Template</id>
-        <version>0.2.1</version>
+        <version>0.2.2</version>
         <description>
             Creates the custom Prism.MAUI app.
         </description>

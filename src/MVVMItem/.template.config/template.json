@@ -1,13 +1,9 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Vulcan",
-  "classifications": [
-    "Common",
-    "Code",
-    "MAUI"
-  ],
+  "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "Windows" ],
   "identity": "Vulcan.PrismLibrary.Maui.MVVM",
-  "name": "Vulcan Custom Prism .NET MAUI View and View Model",
+  "name": "Vulcan Custom Prism View and View Model",
   "shortName": "MVVMItem",
   "sourceName": "PrismApp1",
   "tags": {
@@ -23,7 +19,7 @@
       "isRequired": true
     },
     "view-name": {
-      "description": "view class name",
+      "description": "view class name, don't include Page text",
       "replaces": "ViewNameTemplate",
       "type": "parameter",
       "datatype": "text",
