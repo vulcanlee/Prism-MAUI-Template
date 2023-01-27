@@ -8,33 +8,48 @@ namespace PrismApp1.ViewModels;
 
 public partial class FOPageViewModel : ObservableObject, INavigatedAware
 {
-    [ObservableProperty]
-    ObservableCollection<MenuData> menuDatas= new ObservableCollection<MenuData>();
+    #region 欄位
     private readonly INavigationService navigationService;
+    [ObservableProperty]
+    ObservableCollection<MenuData> menuDatas = new ObservableCollection<MenuData>();
+    #endregion
 
+    #region 屬性
+    #endregion
+
+    #region 建構式
     public FOPageViewModel(INavigationService navigationService)
     {
         this.navigationService = navigationService;
     }
+    #endregion
 
+    #region 命令方法
+    [RelayCommand]
+    async Task MenuTap(string command)
+    {
+        if (command == MagicValue.MenuHomeName)
+        {
+            await navigationService.NavigateAsync($"/FOPage/NaviPage/MainPage");
+        }
+    }
+    #endregion
+
+    #region 導航事件
     public void OnNavigatedFrom(INavigationParameters parameters)
     {
     }
 
     public void OnNavigatedTo(INavigationParameters parameters)
     {
-        BuildMenuList();
-    }
-
-    [RelayCommand]
-    async Task MenuTap(string command)
-    {
-        if(command == MagicValue.MenuHomeName)
+        if (parameters.GetNavigationMode() == Prism.Navigation.NavigationMode.New)
         {
-            await navigationService.NavigateAsync($"/FOPage/NaviPage/MainPage");
+            BuildMenuList();
         }
     }
+    #endregion
 
+    #region 方法
     void BuildMenuList()
     {
         menuDatas.Clear();
@@ -54,4 +69,5 @@ public partial class FOPageViewModel : ObservableObject, INavigatedAware
             Icon = IconFont.ExitToApp,
         });
     }
+    #endregion
 }
