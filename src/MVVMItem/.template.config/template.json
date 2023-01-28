@@ -1,11 +1,12 @@
 {
   "$schema": "http://json.schemastore.org/template",
   "author": "Vulcan",
-  "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "Windows" ],
+  "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "WinUI", "Tizen", "Xaml", "Code" ],
   "identity": "Vulcan.PrismLibrary.Maui.MVVM",
   "name": "Vulcan Custom Prism View and View Model",
   "shortName": "MVVMItem",
   "sourceName": "PrismApp1",
+  "defaultName": "NewPage",
   "tags": {
     "language": "C#",
     "type": "item"
