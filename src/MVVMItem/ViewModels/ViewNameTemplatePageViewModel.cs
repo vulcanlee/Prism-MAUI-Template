@@ -5,24 +5,25 @@ namespace PrismApp1.ViewModels;
 
 public partial class ViewNameTemplatePageViewModel : ObservableObject, INavigatedAware
 {
-    #region 欄位
+    #region Field Member
     private readonly INavigationService navigationService;
     #endregion
 
-    #region 屬性
+    #region Property Member
     #endregion
 
-    #region 建構式
+    #region Constructor
     public ViewNameTemplatePageViewModel(INavigationService navigationService)
     {
         this.navigationService = navigationService;
     }
     #endregion
 
-    #region 命令方法
+    #region Method Member
+    #region Command Method
     #endregion
 
-    #region 導航事件
+    #region Navigation Event
     public void OnNavigatedFrom(INavigationParameters parameters)
     {
     }
@@ -32,6 +33,7 @@ public partial class ViewNameTemplatePageViewModel : ObservableObject, INavigate
     }
     #endregion
 
-    #region 方法
+    #region Other Method
+    #endregion
     #endregion
 }

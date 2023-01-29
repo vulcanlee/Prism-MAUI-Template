@@ -5,7 +5,7 @@ namespace PrismApp1.ViewModels;
 
 public partial class MainPageViewModel : ObservableObject, INavigatedAware
 {
-    #region 欄位
+    #region Field Member
     private int _count;
     private readonly INavigationService navigationService;
 
@@ -16,17 +16,18 @@ public partial class MainPageViewModel : ObservableObject, INavigatedAware
     string text = "Click me";
     #endregion
 
-    #region 屬性
+    #region Property Member
     #endregion
 
-    #region 建構式
+    #region Constructor
     public MainPageViewModel(INavigationService navigationService)
     {
         this.navigationService = navigationService;
     }
     #endregion
 
-    #region 命令方法
+    #region Method Member
+    #region Command Method
     [RelayCommand]
     private void Count()
     {
@@ -38,7 +39,7 @@ public partial class MainPageViewModel : ObservableObject, INavigatedAware
     }
     #endregion
 
-    #region 導航事件
+    #region Navigation Event
     public void OnNavigatedFrom(INavigationParameters parameters)
     {
     }
@@ -48,6 +49,7 @@ public partial class MainPageViewModel : ObservableObject, INavigatedAware
     }
     #endregion
 
-    #region 方法
+    #region Other Method
+    #endregion
     #endregion
 }

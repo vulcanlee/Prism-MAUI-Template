@@ -8,23 +8,24 @@ namespace PrismApp1.ViewModels;
 
 public partial class FOPageViewModel : ObservableObject, INavigatedAware
 {
-    #region 欄位
+    #region Field Member
     private readonly INavigationService navigationService;
     [ObservableProperty]
     ObservableCollection<MenuData> menuDatas = new ObservableCollection<MenuData>();
     #endregion
 
-    #region 屬性
+    #region Property Member
     #endregion
 
-    #region 建構式
+    #region Constructor Member
     public FOPageViewModel(INavigationService navigationService)
     {
         this.navigationService = navigationService;
     }
     #endregion
 
-    #region 命令方法
+    #region Method Member
+    #region Command Method
     [RelayCommand]
     async Task MenuTap(string command)
     {
@@ -35,7 +36,7 @@ public partial class FOPageViewModel : ObservableObject, INavigatedAware
     }
     #endregion
 
-    #region 導航事件
+    #region Navigation Event
     public void OnNavigatedFrom(INavigationParameters parameters)
     {
     }
@@ -49,7 +50,7 @@ public partial class FOPageViewModel : ObservableObject, INavigatedAware
     }
     #endregion
 
-    #region 方法
+    #region Other Method
     void BuildMenuList()
     {
         menuDatas.Clear();
@@ -69,5 +70,6 @@ public partial class FOPageViewModel : ObservableObject, INavigatedAware
             Icon = IconFont.ExitToApp,
         });
     }
+    #endregion
     #endregion
 }
