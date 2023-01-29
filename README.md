@@ -4,6 +4,8 @@
 
 * 切換到工作目錄
 
+d:
+
 cd D:\Vulcan\GitHub\Prism-MAUI-Template\src
 
 * 產生出 NuGet 套件
@@ -12,13 +14,23 @@ d:\nuget.exe pack D:\Vulcan\GitHub\Prism-MAUI-Template\Vulcan.Maui.Template.nusp
 
 * 安裝此 NuGet 套件 - 此專案範本
 
+Install template
+
 dotnet new install d:\temp\Vulcan.Maui.Template.0.2.4.nupkg
 
 * 使用此專案範本，產生一個新的專案
 
+# Create a new empty project of Prism.Maui
+
 dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
+# Create a new full project of Prism.Maui (has flyout menu)
+
+dotnet new Full-Maui -o d:\Temp\MyApp
+
 * 建立 View / ViewModel 項目
+
+# Create a new View and ViewModel (don't append Page to view-name parameter)
 
 dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
 

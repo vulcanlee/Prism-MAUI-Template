@@ -11,28 +11,6 @@
       "version": "(,17.3)"
     }
   ],
-  "symbolInfo": [
-    {
-      "id": "namespace",
-      "name": {
-        "text": "base namespace to use for the generated view"
-      },
-      "isVisible": true
-    },
-    {
-      "id": "view-name",
-      "name": {
-        "text": "view class name"
-      },
-      "isVisible": true
-    }
-  ],
-  "unsupportedHosts": [
-    {
-      "id": "vs",
-      "version": "(,17.3)"
-    }
-  ],
   "requiredComponents": [
     {
       "id": "Microsoft.VisualStudio.ComponentGroup.Maui.All",
