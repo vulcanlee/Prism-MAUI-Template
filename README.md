@@ -16,7 +16,7 @@ d:\nuget.exe pack D:\Vulcan\GitHub\Prism-MAUI-Template\Vulcan.Maui.Template.nusp
 
 Install template
 
-dotnet new install d:\temp\Vulcan.Maui.Template.0.2.4.nupkg
+dotnet new install d:\temp\Vulcan.Maui.Template.0.2.5.nupkg
 
 * 使用此專案範本，產生一個新的專案
 
