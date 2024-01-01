@@ -1,0 +1,14 @@
+{
+    "$schema": "http://json.schemastore.org/template", 
+    "author": "Vulcan", 
+    "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "Windows" ], 
+    "identity": "Vulcan.Template.Maui.App", 
+    "name": "Vulcan Template .NET MAUI ", 
+    "shortName": "Vulcan-Maui", 
+    "tags": {
+        "language": "C#",
+        "type": "solution"
+      },
+    "sourceName": "MauiApp1", 
+    "preferNameDirectory": true
+}
