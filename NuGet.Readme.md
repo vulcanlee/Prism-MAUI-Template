@@ -1,4 +1,4 @@
-# Create a new empty project of Prism.Maui
+# Create a new empty project of .NET Maui
 
 dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
