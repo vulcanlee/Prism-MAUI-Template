@@ -2,13 +2,13 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Vulcan.Maui.Template</id>
-        <version>0.3.0</version>
+        <version>0.5.0</version>
         <description>
             Creates the .NET8 Prism.MAUI app.
         </description>
         <language>en-US</language>
         <authors>Vulcan Lee</authors>
-        <tags>dotnetmaui maui prism prism.maui templates</tags>
+        <tags>dotnetmaui maui MVVM templates</tags>
         <packageTypes>
             <packageType name="Template" />
           </packageTypes>

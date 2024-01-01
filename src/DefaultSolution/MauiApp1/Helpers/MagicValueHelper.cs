@@ -9,4 +9,5 @@ namespace MauiApp1.Helpers;
 public class MagicValueHelper
 {
     public const string FontName = "materialdesignicons";
+    public const string MainPage = nameof(MainPage);
 }

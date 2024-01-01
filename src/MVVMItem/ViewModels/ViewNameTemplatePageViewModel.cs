@@ -3,19 +3,17 @@ using CommunityToolkit.Mvvm.Input;
 
 namespace PrismApp1.ViewModels;
 
-public partial class ViewNameTemplatePageViewModel : ObservableObject, INavigatedAware
+public partial class ViewNameTemplatePageViewModel : ObservableObject
 {
     #region Field Member
-    private readonly INavigationService navigationService;
     #endregion
 
     #region Property Member
     #endregion
 
     #region Constructor
-    public ViewNameTemplatePageViewModel(INavigationService navigationService)
+    public ViewNameTemplatePageViewModel()
     {
-        this.navigationService = navigationService;
     }
     #endregion
 
@@ -24,13 +22,6 @@ public partial class ViewNameTemplatePageViewModel : ObservableObject, INavigate
     #endregion
 
     #region Navigation Event
-    public void OnNavigatedFrom(INavigationParameters parameters)
-    {
-    }
-
-    public void OnNavigatedTo(INavigationParameters parameters)
-    {
-    }
     #endregion
 
     #region Other Method

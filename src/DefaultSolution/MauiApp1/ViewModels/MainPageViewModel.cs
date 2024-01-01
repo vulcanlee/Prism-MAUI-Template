@@ -2,11 +2,13 @@
 using CommunityToolkit.Mvvm.Input;
 using CommunityToolkit.Mvvm.Messaging;
 using MauiApp1.Events;
+using MauiApp1.Services;
 
 namespace MauiApp1.ViewModels;
 
 public partial class MainPageViewModel : ObservableObject
 {
+    private readonly CounterService counterService;
     #region Field Member
     #endregion
 
@@ -27,15 +29,15 @@ public partial class MainPageViewModel : ObservableObject
     #endregion
 
     #region Constructor Member
-    public MainPageViewModel()
+    public MainPageViewModel(CounterService counterService)
     {
         WeakReferenceMessenger.Default
             .Register<MyValueChangedMessage>(this, (r, m) =>
         {
 
-            MessagerText = $"訊息內容 : {m.Value.Counter.ToString()}";
+            MessagerText = counterService.Get(m.Value.Counter);
         });
-
+        this.counterService = counterService;
     }
     #endregion
 

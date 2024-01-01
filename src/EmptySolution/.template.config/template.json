@@ -4,7 +4,7 @@
     "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "Windows" ], 
     "identity": "Vulcan.PrismLibrary.Maui.App", 
     "name": "Vulcan Custom Prism .NET MAUI App", 
-    "shortName": "Vulcan-Maui", 
+    "shortName": "Vulcan-Maui-Prism", 
     "tags": {
         "language": "C#",
         "type": "solution"
