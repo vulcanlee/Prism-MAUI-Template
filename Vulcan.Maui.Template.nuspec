@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
     <metadata>
         <id>Vulcan.Maui.Template</id>
-        <version>0.5.0</version>
+        <version>0.5.1</version>
         <description>
             Creates the .NET8 MAUI MVVM app.
         </description>

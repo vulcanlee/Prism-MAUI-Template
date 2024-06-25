@@ -22,7 +22,7 @@ public static class MauiProgram
                       {
                           // Do some initializations here
                       })
-                     .OnAppStart(async navigationService =>
+                     .CreateWindow(async navigationService =>
                      {
                          // Navigate to First page of this App
                          var result = await navigationService

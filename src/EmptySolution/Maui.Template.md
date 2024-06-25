@@ -1,25 +1,26 @@
-# 擴充與客製化 Prism-MAUI 的專案樣板
+# Expanding and Customizing the MAUI Project Template
 
-會用到的指令為
+Commands to be used:
 
-* 切換到工作目錄
+* Switch to the working directory
+* Use this project template to generate a new project
 
-* 使用此專案範本，產生一個新的專案
+# Create a new empty project of Prism.Maui (With Prism Library)
+dotnet new Vulcan-Maui-Prism -o d:\Temp\MyApp
 
-# Create a new empty project of Prism.Maui
+# Create a new full project of Prism.Maui (With Prism Library and has flyout menu)
+dotnet new Full-Maui -o d:\Temp\MyApp
 
-dotnet new Vulcan-Maui -o d:\Temp\ReplicaEmrApp
+# Create a new full project of Native Maui (No Prism Library)
+dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
-# Create a new full project of Prism.Maui (has flyout menu)
-
-dotnet new Full-Maui -o d:\Temp\ReplicaEmrApp
-
-* 建立 View / ViewModel 項目
+* Create View / ViewModel items
 
 # Create a new View and ViewModel (don't append Page to view-name parameter)
+dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
 
-dotnet new MVVMItem  --namespace ReplicaEmrApp --view-name MyFirst
-
-* 移除此專案範本
-
+* Remove this project template
 dotnet new uninstall Vulcan.Maui.Template
+
+# Font file lookup webpage
+https://pictogrammers.com/library/mdi/
