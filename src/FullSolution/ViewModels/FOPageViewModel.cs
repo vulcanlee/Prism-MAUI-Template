@@ -10,11 +10,11 @@ public partial class FOPageViewModel : ObservableObject, INavigatedAware
 {
     #region Field Member
     private readonly INavigationService navigationService;
-    [ObservableProperty]
-    ObservableCollection<MenuData> menuDatas = new ObservableCollection<MenuData>();
     #endregion
 
     #region Property Member
+    [ObservableProperty]
+    ObservableCollection<MenuData> menuDatas = new ObservableCollection<MenuData>();
     #endregion
 
     #region Constructor Member

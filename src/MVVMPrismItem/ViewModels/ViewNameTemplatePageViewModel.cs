@@ -6,13 +6,14 @@ namespace PrismApp1.ViewModels;
 public partial class ViewNameTemplatePageViewModel : ObservableObject, INavigatedAware
 {
     #region Field Member
+    private readonly INavigationService navigationService;
     #endregion
 
     #region Property Member
     #endregion
 
     #region Constructor
-    public MainPageViewModel(INavigationService navigationService)
+    public ViewNameTemplatePageViewModel(INavigationService navigationService)
     {
         this.navigationService = navigationService;
     }

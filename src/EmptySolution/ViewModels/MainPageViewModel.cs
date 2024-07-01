@@ -9,14 +9,14 @@ public partial class MainPageViewModel : ObservableObject, INavigatedAware
     private int _count;
     private readonly INavigationService navigationService;
 
+    #endregion
+
+    #region Property Member
     [ObservableProperty]
     string title = "Main Page";
 
     [ObservableProperty]
     string text = "Click me";
-    #endregion
-
-    #region Property Member
     #endregion
 
     #region Constructor

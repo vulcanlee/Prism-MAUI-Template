@@ -18,11 +18,11 @@ dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
 # Create a new View and ViewModel for Native MAUI Project (don't append Page to view-name parameter)
 
-dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
+dotnet new MVVMItem --namespace MauiApp1 --view-name MyFirst
 
 # Create a new View and ViewModel for Prism MAUI Project (don't append Page to view-name parameter)
 
-dotnet new MVVMPrismItem  --namespace MyApp --view-name MyFirst
+dotnet new MVVMPrismItem --namespace MauiApp1 --view-name MyFirst
 
 # Remove this project template
 dotnet new uninstall Vulcan.Maui.Template
