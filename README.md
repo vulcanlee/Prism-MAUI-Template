@@ -26,9 +26,13 @@ dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
 * 建立 View / ViewModel 項目
 
-# Create a new View and ViewModel (don't append Page to view-name parameter)
+# Create a new View and ViewModel for Native MAUI Project (don't append Page to view-name parameter)
 
 dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
+
+# Create a new View and ViewModel for Prism MAUI Project (don't append Page to view-name parameter)
+
+dotnet new MVVMPrismItem  --namespace MyApp --view-name MyFirst
 
 * 移除此專案範本
 

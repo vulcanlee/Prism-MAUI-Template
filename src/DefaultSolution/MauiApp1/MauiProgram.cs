@@ -23,12 +23,12 @@ public static class MauiProgram
             });
 
         builder.Services.AddTransientWithShellRoute<MainPage, MainPageViewModel>(MagicValueHelper.MainPage);
-
         builder.Services.AddTransient<CounterService>();
 
 #if DEBUG
-		builder.Logging.AddDebug();
+        builder.Logging.AddDebug();
 #endif
+        builder.Logging.AddConsole();
 
         return builder.Build();
     }

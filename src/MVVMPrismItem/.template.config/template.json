@@ -1,0 +1,31 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Vulcan",
+  "classifications": [ "MAUI", "Android", "iOS", "macOS", "Mac Catalyst", "WinUI", "Tizen", "Xaml", "Code" ],
+  "identity": "Vulcan.Template.Maui.MVVMPrismItem",
+  "name": "Vulcan Maui MVVM View and View Model for Prism",
+  "shortName": "MVVMPrismItem",
+  "sourceName": "PrismApp1",
+  "defaultName": "NewPage",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "symbols": {
+    "namespace": {
+      "description": "base namespace to use for the generated view",
+      "replaces": "PrismApp1",
+      "type": "parameter",
+      "datatype": "text",
+      "isRequired": true
+    },
+    "view-name": {
+      "description": "view class name, don't include Page text",
+      "replaces": "ViewNameTemplate",
+      "type": "parameter",
+      "datatype": "text",
+      "fileRename": "ViewNameTemplate",
+      "isRequired": true
+    }
+  }
+}

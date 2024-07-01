@@ -1,4 +1,6 @@
-﻿using Prism.Ioc;
+﻿using CommunityToolkit.Maui;
+using Microsoft.Extensions.Logging;
+using Prism.Ioc;
 using PrismApp1.Helpers;
 using PrismApp1.ViewModels;
 using PrismApp1.Views;
@@ -12,6 +14,7 @@ public static class MauiProgram
         var builder = MauiApp.CreateBuilder();
         builder
             .UseMauiApp<App>()
+            .UseMauiCommunityToolkit()
             .UsePrism(prism =>
             {
 
@@ -42,6 +45,11 @@ public static class MauiProgram
                 fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular");
                 fonts.AddFont("OpenSans-Semibold.ttf", "OpenSansSemibold");
             });
+
+#if DEBUG
+        builder.Logging.AddDebug();
+#endif
+        builder.Logging.AddConsole();
 
         return builder.Build();
     }
