@@ -4,5 +4,5 @@ C:\temp\nuget.exe pack C:\Vulcan\Github\Prism-MAUI-Template\Vulcan.Maui.Template
 
 dotnet new uninstall Vulcan.Maui.Template
 
-dotnet new install C:\temp\Vulcan.Maui.Template.0.5.2.nupkg
+dotnet new install C:\temp\Vulcan.Maui.Template.0.5.3.nupkg
 
