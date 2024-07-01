@@ -16,10 +16,15 @@ dotnet new Vulcan-Maui -o d:\Temp\MyApp
 
 * Create View / ViewModel items
 
-# Create a new View and ViewModel (don't append Page to view-name parameter)
+# Create a new View and ViewModel for Native MAUI Project (don't append Page to view-name parameter)
+
 dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
 
-* Remove this project template
+# Create a new View and ViewModel for Prism MAUI Project (don't append Page to view-name parameter)
+
+dotnet new MVVMPrismItem  --namespace MyApp --view-name MyFirst
+
+# Remove this project template
 dotnet new uninstall Vulcan.Maui.Template
 
 # Font file lookup webpage

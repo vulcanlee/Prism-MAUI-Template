@@ -24,7 +24,7 @@ dotnet new MVVMItem  --namespace MyApp --view-name MyFirst
 
 dotnet new MVVMPrismItem  --namespace MyApp --view-name MyFirst
 
-* Remove this project template
+# Remove this project template
 dotnet new uninstall Vulcan.Maui.Template
 
 # Font file lookup webpage
